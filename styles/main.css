@@ -241,6 +241,7 @@ body {
 
 #app nav .menu .socials i {
   margin-bottom: 1rem;
+  color: #1E1D5D;
 }
 
 #app nav .menu .socials i:nth-of-type(3) {
@@ -249,7 +250,7 @@ body {
 
 #app nav .menu .socials .line {
   height: 75px;
-  width: 1px;
+  width: 2px;
   background: #1E1D5D;
   margin-bottom: 1rem;
 }
@@ -414,8 +415,8 @@ body {
           flex-direction: column;
 }
 
-#app #brands .icons .image img {
-  height: 75px;
+#app #brands .icons .image i {
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
@@ -480,6 +481,10 @@ body {
   color: #1E1D5D;
   font-weight: 300;
   line-height: 1.5;
+}
+
+#app #study .stats .stat p b {
+  font-weight: 600;
 }
 
 #app #info {
@@ -596,15 +601,25 @@ body {
 
 #app #bonuses .offers .offer .company .image {
   margin-right: 1.5rem;
-  height: 150px;
-  width: 150px;
+  padding: 1rem;
+  min-height: 150px;
+  min-width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-shadow: 0px 0px 19px 0px #c9c9c9;
   box-shadow: 0px 0px 19px 0px #c9c9c9;
 }
 
 #app #bonuses .offers .offer .company .image img {
-  height: 150px;
-  width: 150px;
+  height: 50px;
+  width: 50px;
 }
 
 #app #bonuses .offers .offer .company p {
@@ -676,7 +691,7 @@ body {
 }
 
 #app #about .text {
-  width: 60%;
+  width: 50%;
 }
 
 #app #about h1 {
@@ -699,8 +714,8 @@ body {
 #app #about img {
   position: absolute;
   top: 250px;
-  right: -40%;
-  max-height: 400px;
+  right: -50%;
+  max-height: 500px;
 }
 
 #app #subscribe {
@@ -752,6 +767,7 @@ body {
   color: #2c2c2c;
   background: white;
   border-radius: 4px 0 0 4px;
+  width: 60%;
 }
 
 #app #subscribe .input button {
@@ -762,6 +778,7 @@ body {
   font-size: 1.1rem;
   padding: 1rem;
   background: #1E1D5D;
+  width: 40%;
   color: white;
   border-radius: 0 4px 4px 0;
   -webkit-transition: background 0.3s ease-in-out;
@@ -769,7 +786,7 @@ body {
 }
 
 #app #subscribe .input button:hover {
-  background: #005cd6;
+  background: #14133e;
 }
 
 #app footer {
@@ -911,16 +928,18 @@ body {
     height: 300px;
   }
   #app #brands .icons {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   #app #brands .icons .image {
     margin-bottom: 1.5rem;
+  }
+  #app #brands .icons .image h4 {
+    text-align: center;
   }
   #app #uses .container p {
     max-width: 400px;
@@ -942,6 +961,17 @@ body {
 }
 
 @media (max-width: 575.98px) {
+  #app #welcome .signup .input input {
+    font-size: 1rem;
+    width: 60%;
+  }
+  #app #welcome .signup .input button {
+    width: 40%;
+    font-size: 1rem;
+  }
+  #app #welcome .signup a.demo {
+    font-size: 1rem;
+  }
   #app nav .logo img {
     max-height: 40px;
   }
@@ -951,8 +981,29 @@ body {
   #app #brands img.shape {
     display: none;
   }
-  #app #brands .icons .image img {
-    height: 75px;
+  #app #brands .icons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #app #brands .icons .image {
+    width: 100%;
+  }
+  #app #brands .icons .image i {
+    font-size: 3rem;
+  }
+  #app #brands .icons .image:last-of-type {
+    margin-bottom: 0;
+  }
+  #app #brands .icons .image h4 {
+    line-height: 1.2;
   }
   #app #study {
     padding: 5rem 1.5rem;
@@ -999,12 +1050,14 @@ body {
     padding: 5rem 1.5rem;
   }
   #app #bonuses .offers .offer .company .image {
-    height: 100px;
-    width: 100px;
+    min-height: 100px;
+    min-width: 100px;
+    max-height: 100px;
+    max-width: 100px;
   }
   #app #bonuses .offers .offer .company .image img {
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
   }
   #app #uses {
     padding: 5rem 1.5rem;

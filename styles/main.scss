@@ -129,13 +129,14 @@ body {
 				align-items: center;
 				i {
 					margin-bottom: 1rem;
+					color: $darkBlue;
 					&:nth-of-type(3) {
 						margin: 0;
 					}
 				}
 				.line {
 					height: 75px;
-					width: 1px;
+					width: 2px;
 					background: $darkBlue;
 					margin-bottom: 1rem;
 				}
@@ -256,8 +257,8 @@ body {
 				align-items: center;
 				justify-content: center;
 				flex-direction: column;
-				img {
-					height: 75px;
+				i {
+					font-size: 2.5rem;
 					margin-bottom: 1rem;
 				}
 				h4 {
@@ -311,6 +312,9 @@ body {
 					color: $darkBlue;
 					font-weight: 300;
 					line-height: 1.5;
+					b {
+						font-weight: 600;
+					}
 				}
 			}
 		}
@@ -391,14 +395,18 @@ body {
 					display: flex;
 					.image {
 						margin-right: 1.5rem;
-						height: 150px;
-						width: 150px;
+						padding: 1rem;
+						min-height: 150px;
+						min-width: 150px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
 						-webkit-box-shadow: 0px 0px 19px 0px rgba(201, 201, 201, 1);
 						-moz-box-shadow: 0px 0px 19px 0px rgba(201, 201, 201, 1);
 						box-shadow: 0px 0px 19px 0px rgba(201, 201, 201, 1);
 						img {
-							height: 150px;
-							width: 150px;
+							height: 50px;
+							width: 50px;
 						}
 					}
 					p {
@@ -470,7 +478,7 @@ body {
 		padding: 8rem 3rem;
 		position: relative;
 		.text {
-			width: 60%;
+			width: 50%;
 		}
 		h1 {
 			color: $darkBlue;
@@ -492,8 +500,8 @@ body {
 		img {
 			position: absolute;
 			top: 250px;
-			right: -40%;
-			max-height: 400px;
+			right: -50%;
+			max-height: 500px;
 		}
 	}
 
@@ -530,6 +538,7 @@ body {
 				color: #2c2c2c;
 				background: white;
 				border-radius: 4px 0 0 4px;
+				width: 60%;
 			}
 
 			button {
@@ -540,11 +549,12 @@ body {
 				font-size: 1.1rem;
 				padding: 1rem;
 				background: $darkBlue;
+				width: 40%;
 				color: white;
 				border-radius: 0 4px 4px 0;
 				transition: background 0.3s ease-in-out;
 				&:hover {
-					background: darken($blue, 8%);
+					background: darken($darkBlue, 8%);
 				}
 			}
 		}
@@ -707,10 +717,16 @@ body {
 		}
 		#brands {
 			.icons {
-				flex-direction: column;
-				align-items: center;
+				align-items: flex-start;
+				justify-content: center;
 				.image {
 					margin-bottom: 1.5rem;
+					i {
+
+					}
+					h4 {
+						text-align: center;
+					}
 				}
 			}
 		}
@@ -743,6 +759,23 @@ body {
 
 @media (max-width: 575.98px) {
 	#app {
+		#welcome {
+			.signup {
+				.input {
+					input {
+						font-size: 1rem;
+						width: 60%;
+					}
+					button {
+						width: 40%;
+						font-size: 1rem;
+					}
+				}
+				a.demo {
+					font-size: 1rem;
+				}
+			}
+		}
 		nav {
 			.logo {
 				img {
@@ -756,9 +789,19 @@ body {
 				display: none;
 			}
 			.icons {
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
 				.image {
-					img {
-						height: 75px;
+					width: 100%;
+					i {
+						font-size: 3rem;
+					}
+					&:last-of-type {
+						margin-bottom: 0;
+					}
+					h4 {
+						line-height: 1.2;
 					}
 				}
 			}
@@ -800,11 +843,13 @@ body {
 				.offer {
 					.company {
 						.image {
-							height: 100px;
-							width: 100px;
+							min-height: 100px;
+							min-width: 100px;
+							max-height: 100px;
+							max-width: 100px;
 							img {
-								height: 100px;
-								width: 100px;
+								height: 50px;
+								width: 50px;
 							}
 						}
 					}
