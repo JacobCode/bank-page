@@ -80,9 +80,8 @@ body {
 			height: 100%;
 			width: 100%;
 			z-index: 1000;
-			padding: 5rem 3rem;
+			padding: 5rem;
 			transition: all 0.5s ease-in-out;
-			opacity: 0;
 			&.open {
 				left: 0;
 				opacity: 1;
@@ -153,7 +152,7 @@ body {
 		margin: -1.5rem auto 0;
 		.signup {
 			width: 60%;
-			padding: 0 3rem;
+			padding: 0 5rem;
 			h1 {
 				font-size: 2.5rem;
 				line-height: 1.2;
@@ -171,6 +170,9 @@ body {
 				display: flex;
 				margin-bottom: 3rem;
 				max-width: 600px;
+				-webkit-box-shadow: 0px 0px 19px 0px rgba(199, 199, 199, 0.5);
+				-moz-box-shadow: 0px 0px 19px 0px rgba(199, 199, 199, 0.5);
+				box-shadow: 0px 0px 19px 0px rgba(199, 199, 199, 0.5);
 				input {
 					width: 70%;
 					border-radius: 0;
@@ -179,8 +181,8 @@ body {
 					font-size: 1.1rem;
 					padding: 1rem;
 					color: #2c2c2c;
-					background: $white;
 					border-radius: 4px 0 0 4px;
+					background: white;
 				}
 				button {
 					width: 30%;
@@ -222,7 +224,7 @@ body {
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			padding: 0 3rem;
+			padding: 0 5rem;
 			img {
 				height: 500px;
 				width: 350px;
@@ -235,15 +237,19 @@ body {
 		background: $lightPurple;
 		padding: 3rem;
 		position: relative;
-		img.shape {
+		user-select: none;
+		svg {
 			position: absolute;
 			right: -50%;
 			top: -200px;
 			max-height: 300px;
+			user-select: none;
+			-ms-user-select: none;
+			-moz-user-select: none;
 		}
 		h2 {
 			text-align: center;
-			margin-bottom: 1.5rem;
+			margin-bottom: 3rem;
 			font-size: 1.2rem;
 			color: #424242;
 			text-transform: uppercase;
@@ -258,8 +264,11 @@ body {
 				justify-content: center;
 				flex-direction: column;
 				i {
-					font-size: 2.5rem;
+					font-size: 3rem;
 					margin-bottom: 1rem;
+					background: -webkit-linear-gradient(#5e08ff, #1498D5);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
 				}
 				h4 {
 					color: $darkBlue;
@@ -271,7 +280,7 @@ body {
 	// Study
 	#study {
 		background: #7176D9;
-		padding: 8rem 3rem;
+		padding: 8rem 5rem;
 		h2 {
 			color: white;
 			font-weight: 600;
@@ -327,13 +336,17 @@ body {
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
-		padding: 5rem 3rem;
+		padding: 5rem;
 		position: relative;
-		img {
+		svg {
 			position: absolute;
 			max-height: 400px;
 			left: -50%;
 			top: -150px;
+			user-select: none;
+			-ms-user-select: none;
+			-moz-user-select: none;
+			z-index: 1;
 		}
 		h1 {
 			color: white;
@@ -371,7 +384,7 @@ body {
 	#bonuses {
 		display: flex;
 		flex-direction: column;
-		padding: 5rem 3rem;
+		padding: 5rem;
 		h1 {
 			color: $darkBlue;
 			font-weight: 600;
@@ -388,7 +401,7 @@ body {
 					color: $darkBlue;
 					font-size: 1.5rem;
 					font-weight: 600;
-					max-width: 350px;
+					max-width: 800px;
 					line-height: 1.2;
 				}
 				.company {
@@ -401,9 +414,9 @@ body {
 						display: flex;
 						align-items: center;
 						justify-content: center;
-						-webkit-box-shadow: 0px 0px 19px 0px rgba(201, 201, 201, 1);
-						-moz-box-shadow: 0px 0px 19px 0px rgba(201, 201, 201, 1);
-						box-shadow: 0px 0px 19px 0px rgba(201, 201, 201, 1);
+						-webkit-box-shadow: 0px 0px 19px 0px rgba(201, 201, 201, 0.5);
+						-moz-box-shadow: 0px 0px 19px 0px rgba(201, 201, 201, 0.5);
+						box-shadow: 0px 0px 19px 0px rgba(201, 201, 201, 0.5);
 						img {
 							height: 50px;
 							width: 50px;
@@ -422,13 +435,17 @@ body {
 	// Uses
 	#uses {
 		background: $lightPurple;
-		padding: 5rem 3rem;
+		padding: 5rem;
 		position: relative;
-		img {
+		svg {
 			max-height: 400px;
 			position: absolute;
 			right: -50%;
 			top: -125px;
+			user-select: none;
+			-ms-user-select: none;
+			-moz-user-select: none;
+			z-index: 1;
 		}
 		.container {
 			
@@ -475,10 +492,10 @@ body {
 
 	// About
 	#about {
-		padding: 8rem 3rem;
+		padding: 8rem 5rem;
 		position: relative;
 		.text {
-			width: 50%;
+			width: 80%;
 		}
 		h1 {
 			color: $darkBlue;
@@ -490,6 +507,7 @@ body {
 			color: $darkBlue;
 			line-height: 1.5;
 			font-weight: 300;
+			max-width: 700px;
 			&:nth-of-type(1) {
 				margin-bottom: 1.5rem;
 			}
@@ -497,11 +515,15 @@ body {
 				
 			}
 		}
-		img {
+		svg {
 			position: absolute;
 			top: 250px;
 			right: -50%;
 			max-height: 500px;
+			user-select: none;
+			-ms-user-select: none;
+			-moz-user-select: none;
+			z-index: 1;
 		}
 	}
 
@@ -529,6 +551,9 @@ body {
 		}
 		.input {
 			display: flex;
+			-webkit-box-shadow: 0px 0px 19px 0px rgba(75, 75, 75, 0.25);
+			-moz-box-shadow: 0px 0px 19px 0px rgba(75, 75, 75, 0.25);
+			box-shadow: 0px 0px 19px 0px rgba(75, 75, 75, 0.25);
 			input {
 				border-radius: 0;
 				border: none;
@@ -562,7 +587,7 @@ body {
 
 	footer {
 		background: $darkBlue;
-		padding: 5rem 3rem;
+		padding: 5rem;
 		display: flex;
 		justify-content: space-between;
 		.col {
@@ -641,12 +666,25 @@ body {
 
 @media (max-width: 991.98px) {
 	#app {
+		#welcome {
+			.signup {
+				padding: 0 3rem;
+			}
+			.preview {
+				padding: 0 3rem;
+			}
+		}
 		nav {
 			.links {
 				display: none;
 			}
 			.menu-toggler {
 				display: flex;
+			}
+		}
+		#about {
+			.text {
+				width: 70%;
 			}
 		}
 		#bonuses {
@@ -695,7 +733,7 @@ body {
 		#welcome {
 			flex-direction: column;
 			justify-content: initial;
-			margin: 3rem auto 0;
+			margin: 1.5rem auto 0;
 			height: initial;
 			padding-bottom: 5rem;
 			.signup {
@@ -730,7 +768,17 @@ body {
 				}
 			}
 		}
+		#study {
+			padding: 8rem 3rem;
+		}
+		#info {
+			padding: 5rem 3rem;
+		}
+		#bonuses {
+			padding: 5rem 3rem;
+		}
 		#uses {
+			padding: 5rem 3rem;
 			.container {
 				p {
 					max-width: 400px;
@@ -739,12 +787,17 @@ body {
 			}
 		}
 		#about {
+			padding: 8rem 3rem;
 			.text {
 				width: 70%;
 			}
 		}
+		#subscribe {
+			padding: 5rem 3rem;
+		}
 		footer {
 			flex-wrap: wrap;
+			padding: 5rem 3rem;
 			.col {
 				&:nth-of-type(1) {
 					margin-bottom: 1.5rem;
@@ -759,8 +812,19 @@ body {
 
 @media (max-width: 575.98px) {
 	#app {
+		nav {
+			.logo {
+				img {
+					max-height: 40px;
+				}
+			}
+			.menu {
+				padding: 5rem 1.5rem;
+			}
+		}
 		#welcome {
 			.signup {
+				padding: 0 1.5rem;
 				.input {
 					input {
 						font-size: 1rem;
@@ -775,17 +839,13 @@ body {
 					font-size: 1rem;
 				}
 			}
-		}
-		nav {
-			.logo {
-				img {
-					max-height: 40px;
-				}
+			.preview {
+				padding: 0 1.5rem;
 			}
 		}
 		#brands {
 			padding: 5rem 1.5rem;
-			img.shape {
+			svg {
 				display: none;
 			}
 			.icons {
@@ -795,7 +855,7 @@ body {
 				.image {
 					width: 100%;
 					i {
-						font-size: 3rem;
+						font-size: 3.5rem;
 					}
 					&:last-of-type {
 						margin-bottom: 0;
@@ -822,7 +882,7 @@ body {
 			h1 {
 				text-align: center;
 			}
-			img {
+			svg {
 				display: none;
 			}
 			.columns {
@@ -858,7 +918,7 @@ body {
 		}
 		#uses {
 			padding: 5rem 1.5rem;
-			img {
+			svg {
 				display: none;
 			}
 			h1 {
@@ -875,7 +935,7 @@ body {
 		}
 		#about {
 			padding: 5rem 1.5rem;
-			img {
+			svg {
 				display: none;
 			}
 			.text {

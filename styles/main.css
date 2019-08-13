@@ -160,10 +160,9 @@ body {
   height: 100%;
   width: 100%;
   z-index: 1000;
-  padding: 5rem 3rem;
+  padding: 5rem;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  opacity: 0;
 }
 
 #app nav .menu.open {
@@ -271,7 +270,7 @@ body {
 
 #app #welcome .signup {
   width: 60%;
-  padding: 0 3rem;
+  padding: 0 5rem;
 }
 
 #app #welcome .signup h1 {
@@ -295,6 +294,8 @@ body {
   display: flex;
   margin-bottom: 3rem;
   max-width: 600px;
+  -webkit-box-shadow: 0px 0px 19px 0px rgba(199, 199, 199, 0.5);
+  box-shadow: 0px 0px 19px 0px rgba(199, 199, 199, 0.5);
 }
 
 #app #welcome .signup .input input {
@@ -305,8 +306,8 @@ body {
   font-size: 1.1rem;
   padding: 1rem;
   color: #2c2c2c;
-  background: #f3f3f3;
   border-radius: 4px 0 0 4px;
+  background: white;
 }
 
 #app #welcome .signup .input button {
@@ -360,7 +361,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 3rem;
+  padding: 0 5rem;
 }
 
 #app #welcome .preview img {
@@ -372,18 +373,26 @@ body {
   background: #F3F7FF;
   padding: 3rem;
   position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
-#app #brands img.shape {
+#app #brands svg {
   position: absolute;
   right: -50%;
   top: -200px;
   max-height: 300px;
+  -webkit-user-select: none;
+          user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
 }
 
 #app #brands h2 {
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
   font-size: 1.2rem;
   color: #424242;
   text-transform: uppercase;
@@ -416,8 +425,11 @@ body {
 }
 
 #app #brands .icons .image i {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
+  background: -webkit-linear-gradient(#5e08ff, #1498D5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #app #brands .icons .image h4 {
@@ -426,7 +438,7 @@ body {
 
 #app #study {
   background: #7176D9;
-  padding: 8rem 3rem;
+  padding: 8rem 5rem;
 }
 
 #app #study h2 {
@@ -502,15 +514,20 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 5rem 3rem;
+  padding: 5rem;
   position: relative;
 }
 
-#app #info img {
+#app #info svg {
   position: absolute;
   max-height: 400px;
   left: -50%;
   top: -150px;
+  -webkit-user-select: none;
+          user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  z-index: 1;
 }
 
 #app #info h1 {
@@ -566,7 +583,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 5rem 3rem;
+  padding: 5rem;
 }
 
 #app #bonuses h1 {
@@ -589,7 +606,7 @@ body {
   color: #1E1D5D;
   font-size: 1.5rem;
   font-weight: 600;
-  max-width: 350px;
+  max-width: 800px;
   line-height: 1.2;
 }
 
@@ -613,8 +630,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-shadow: 0px 0px 19px 0px #c9c9c9;
-  box-shadow: 0px 0px 19px 0px #c9c9c9;
+  -webkit-box-shadow: 0px 0px 19px 0px rgba(201, 201, 201, 0.5);
+  box-shadow: 0px 0px 19px 0px rgba(201, 201, 201, 0.5);
 }
 
 #app #bonuses .offers .offer .company .image img {
@@ -630,15 +647,20 @@ body {
 
 #app #uses {
   background: #F3F7FF;
-  padding: 5rem 3rem;
+  padding: 5rem;
   position: relative;
 }
 
-#app #uses img {
+#app #uses svg {
   max-height: 400px;
   position: absolute;
   right: -50%;
   top: -125px;
+  -webkit-user-select: none;
+          user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  z-index: 1;
 }
 
 #app #uses h1 {
@@ -686,12 +708,12 @@ body {
 }
 
 #app #about {
-  padding: 8rem 3rem;
+  padding: 8rem 5rem;
   position: relative;
 }
 
 #app #about .text {
-  width: 50%;
+  width: 80%;
 }
 
 #app #about h1 {
@@ -705,17 +727,23 @@ body {
   color: #1E1D5D;
   line-height: 1.5;
   font-weight: 300;
+  max-width: 700px;
 }
 
 #app #about p:nth-of-type(1) {
   margin-bottom: 1.5rem;
 }
 
-#app #about img {
+#app #about svg {
   position: absolute;
   top: 250px;
   right: -50%;
   max-height: 500px;
+  -webkit-user-select: none;
+          user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  z-index: 1;
 }
 
 #app #subscribe {
@@ -756,6 +784,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-shadow: 0px 0px 19px 0px rgba(75, 75, 75, 0.25);
+  box-shadow: 0px 0px 19px 0px rgba(75, 75, 75, 0.25);
 }
 
 #app #subscribe .input input {
@@ -791,7 +821,7 @@ body {
 
 #app footer {
   background: #1E1D5D;
-  padding: 5rem 3rem;
+  padding: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -859,6 +889,12 @@ body {
 }
 
 @media (max-width: 991.98px) {
+  #app #welcome .signup {
+    padding: 0 3rem;
+  }
+  #app #welcome .preview {
+    padding: 0 3rem;
+  }
   #app nav .links {
     display: none;
   }
@@ -866,6 +902,9 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  #app #about .text {
+    width: 70%;
   }
   #app #bonuses .offers {
     -ms-grid-columns: 1fr;
@@ -907,7 +946,7 @@ body {
     -webkit-box-pack: initial;
         -ms-flex-pack: initial;
             justify-content: initial;
-    margin: 3rem auto 0;
+    margin: 1.5rem auto 0;
     height: initial;
     padding-bottom: 5rem;
   }
@@ -941,16 +980,35 @@ body {
   #app #brands .icons .image h4 {
     text-align: center;
   }
+  #app #study {
+    padding: 8rem 3rem;
+  }
+  #app #info {
+    padding: 5rem 3rem;
+  }
+  #app #bonuses {
+    padding: 5rem 3rem;
+  }
+  #app #uses {
+    padding: 5rem 3rem;
+  }
   #app #uses .container p {
     max-width: 400px;
     line-height: 1.5;
   }
+  #app #about {
+    padding: 8rem 3rem;
+  }
   #app #about .text {
     width: 70%;
+  }
+  #app #subscribe {
+    padding: 5rem 3rem;
   }
   #app footer {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding: 5rem 3rem;
   }
   #app footer .col:nth-of-type(1) {
     margin-bottom: 1.5rem;
@@ -961,6 +1019,15 @@ body {
 }
 
 @media (max-width: 575.98px) {
+  #app nav .logo img {
+    max-height: 40px;
+  }
+  #app nav .menu {
+    padding: 5rem 1.5rem;
+  }
+  #app #welcome .signup {
+    padding: 0 1.5rem;
+  }
   #app #welcome .signup .input input {
     font-size: 1rem;
     width: 60%;
@@ -972,13 +1039,13 @@ body {
   #app #welcome .signup a.demo {
     font-size: 1rem;
   }
-  #app nav .logo img {
-    max-height: 40px;
+  #app #welcome .preview {
+    padding: 0 1.5rem;
   }
   #app #brands {
     padding: 5rem 1.5rem;
   }
-  #app #brands img.shape {
+  #app #brands svg {
     display: none;
   }
   #app #brands .icons {
@@ -997,7 +1064,7 @@ body {
     width: 100%;
   }
   #app #brands .icons .image i {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   #app #brands .icons .image:last-of-type {
     margin-bottom: 0;
@@ -1025,7 +1092,7 @@ body {
   #app #info h1 {
     text-align: center;
   }
-  #app #info img {
+  #app #info svg {
     display: none;
   }
   #app #info .columns {
@@ -1062,7 +1129,7 @@ body {
   #app #uses {
     padding: 5rem 1.5rem;
   }
-  #app #uses img {
+  #app #uses svg {
     display: none;
   }
   #app #uses .container .uses {
@@ -1072,7 +1139,7 @@ body {
   #app #about {
     padding: 5rem 1.5rem;
   }
-  #app #about img {
+  #app #about svg {
     display: none;
   }
   #app #about .text {
