@@ -170,9 +170,9 @@ body {
 				display: flex;
 				margin-bottom: 3rem;
 				max-width: 600px;
-				-webkit-box-shadow: 0px 0px 19px 0px rgba(199, 199, 199, 0.5);
-				-moz-box-shadow: 0px 0px 19px 0px rgba(199, 199, 199, 0.5);
-				box-shadow: 0px 0px 19px 0px rgba(199, 199, 199, 0.5);
+				-webkit-box-shadow: 0px 0px 19px 0px rgba(199, 199, 199, 0.35);
+				-moz-box-shadow: 0px 0px 19px 0px rgba(199, 199, 199, 0.35);
+				box-shadow: 0px 0px 19px 0px rgba(199, 199, 199, 0.35);
 				input {
 					width: 70%;
 					border-radius: 0;
@@ -202,7 +202,7 @@ body {
 				}
 			}
 			span {
-				color: $darkBlue;
+				color: rgb(192, 192, 192);
 				font-weight: 300;
 				margin-bottom: 3rem;
 				display: block;
@@ -240,7 +240,7 @@ body {
 		user-select: none;
 		svg {
 			position: absolute;
-			right: -50%;
+			right: -100%;
 			top: -200px;
 			max-height: 300px;
 			user-select: none;
@@ -440,7 +440,7 @@ body {
 		svg {
 			max-height: 400px;
 			position: absolute;
-			right: -50%;
+			right: -100%;
 			top: -125px;
 			user-select: none;
 			-ms-user-select: none;
@@ -518,7 +518,7 @@ body {
 		svg {
 			position: absolute;
 			top: 250px;
-			right: -50%;
+			right: -100%;
 			max-height: 500px;
 			user-select: none;
 			-ms-user-select: none;
@@ -601,7 +601,9 @@ body {
 					}
 				}
 				p {
-					color: #d1d1d1;
+					font-weight: 300;
+					color: white;
+					opacity: 0.6;
 				}
 			}
 			&:nth-of-type(2) {
@@ -612,8 +614,10 @@ body {
 				}
 				ul {
 					li {
-						color: #d1d1d1;
+						color: white;
+						opacity: 0.6;
 						margin-bottom: 1rem;
+						font-weight: 300;
 					}
 				}
 			}
@@ -625,8 +629,10 @@ body {
 				}
 				ul {
 					li {
-						color: #d1d1d1;
+						color: white;
+						opacity: 0.6;
 						margin-bottom: 1rem;
+						font-weight: 300;
 					}
 				}
 			}
@@ -637,11 +643,12 @@ body {
 					margin-bottom: 1.5rem;
 				}
 				p {
-					color: #d1d1d1;
+					color: white;
+					opacity: 0.6;
 					margin-bottom: 1rem;
+					font-weight: 300;
 				}
 				span {
-					color: #d1d1d1;
 					display: block;
 					color: $blue;
 					cursor: pointer;

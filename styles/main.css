@@ -294,8 +294,8 @@ body {
   display: flex;
   margin-bottom: 3rem;
   max-width: 600px;
-  -webkit-box-shadow: 0px 0px 19px 0px rgba(199, 199, 199, 0.5);
-  box-shadow: 0px 0px 19px 0px rgba(199, 199, 199, 0.5);
+  -webkit-box-shadow: 0px 0px 19px 0px rgba(199, 199, 199, 0.35);
+  box-shadow: 0px 0px 19px 0px rgba(199, 199, 199, 0.35);
 }
 
 #app #welcome .signup .input input {
@@ -330,7 +330,7 @@ body {
 }
 
 #app #welcome .signup span {
-  color: #1E1D5D;
+  color: silver;
   font-weight: 300;
   margin-bottom: 3rem;
   display: block;
@@ -381,7 +381,7 @@ body {
 
 #app #brands svg {
   position: absolute;
-  right: -50%;
+  right: -100%;
   top: -200px;
   max-height: 300px;
   -webkit-user-select: none;
@@ -654,7 +654,7 @@ body {
 #app #uses svg {
   max-height: 400px;
   position: absolute;
-  right: -50%;
+  right: -100%;
   top: -125px;
   -webkit-user-select: none;
           user-select: none;
@@ -737,7 +737,7 @@ body {
 #app #about svg {
   position: absolute;
   top: 250px;
-  right: -50%;
+  right: -100%;
   max-height: 500px;
   -webkit-user-select: none;
           user-select: none;
@@ -841,7 +841,9 @@ body {
 }
 
 #app footer .col:nth-of-type(1) p {
-  color: #d1d1d1;
+  font-weight: 300;
+  color: white;
+  opacity: 0.6;
 }
 
 #app footer .col:nth-of-type(2) h6 {
@@ -851,8 +853,10 @@ body {
 }
 
 #app footer .col:nth-of-type(2) ul li {
-  color: #d1d1d1;
+  color: white;
+  opacity: 0.6;
   margin-bottom: 1rem;
+  font-weight: 300;
 }
 
 #app footer .col:nth-of-type(3) h6 {
@@ -862,8 +866,10 @@ body {
 }
 
 #app footer .col:nth-of-type(3) ul li {
-  color: #d1d1d1;
+  color: white;
+  opacity: 0.6;
   margin-bottom: 1rem;
+  font-weight: 300;
 }
 
 #app footer .col:nth-of-type(4) h6 {
@@ -873,12 +879,13 @@ body {
 }
 
 #app footer .col:nth-of-type(4) p {
-  color: #d1d1d1;
+  color: white;
+  opacity: 0.6;
   margin-bottom: 1rem;
+  font-weight: 300;
 }
 
 #app footer .col:nth-of-type(4) span {
-  color: #d1d1d1;
   display: block;
   color: #006eff;
   cursor: pointer;
